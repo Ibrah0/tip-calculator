@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <img class="splitter" src="./images/logo.svg" alt="logo.svg">
+  <div class="container">
+    <div class="calculate">
+      <div class="bill">
+        <h3>Bill</h3>
+        <input class="textbox" type="text"   id="billInput" placeholder="">
+      </div>
+      <div class="select">
+        <h3>Select Tip %</h3>
+        <div class="buttons" id="tipButtons">
+          <button id="btn" value="5">5%</button>
+          <button id="btn" value="10">10%</button>
+          <button id="btn" value="15">15%</button>
+          <button id="btn" value="25">25%</button>
+          <button id="btn" value="50">50%</button>
+          <input id="custom" type="text"  id="inputext"  placeholder="Custom">
+      </div>
+      </div>
+      <div class="people">
+        <h3>Number of People</h3>
+        <input class="textbox1" type="text" id="numOfPeople" placeholder="">
+      </div>
+      <div class="cant">
+        <p>can't be zero</p>
+      </div>
+    </div>
+    <div class="dark">
+      <div class="display1">
+        <div class="text">
+          <h2>Tip Amount</h2>
+          <h4>/ person</h4>
+        </div>
+        <span id="result">$4.27</span>
+      </div> 
+      <div class="display">
+        <div class="text">
+          <h2>Total</h2>
+          <h4>/ person</h4>
+        </div>
+        <span id="totalResult">$4.27</span>
+      </div> 
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+  <script src="./handler.js"></script>
+</body>
+</html>
