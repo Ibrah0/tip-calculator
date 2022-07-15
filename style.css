@@ -207,6 +207,7 @@ input:focus {
 
     body{
         align-items: flex-end;
+        height: max-content;
     }
 
     .splitter{
